@@ -7,6 +7,7 @@ wget -4 "http://www.shallalist.de/Downloads/shallalist.tar.gz" -O /tmp/shalla.tg
 
 git rm -r .
 tar --strip-components=1 -zxvf /tmp/shalla.tgz -C /opt/shallalist
+find -type l -delete
 
 DATE=`date +%Y%m%d-%H%M%S`
 echo "${DATE}" > last.updated
